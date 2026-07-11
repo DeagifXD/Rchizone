@@ -1,0 +1,60 @@
+.base-icon {
+    width: 24px !important;
+    height: 24px !important;
+    
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+    -webkit-mask: none;
+    mask: none;
+    
+    -webkit-mask-image: none;
+    mask-image: none;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    
+    -webkit-mask-size: 100% 100% !important;
+    mask-size: 100% 100% !important;
+    
+    background-clip: content-box;
+}
+
+.calendar-icon {
+    -webkit-mask: url("../img/calendar.png");
+    mask: url("../img/calendar.png");
+}
+
+.category-icon {
+    -webkit-mask: url("../img/category.png");
+    mask: url("../img/category.png");
+}
+
+.comment-icon {
+    -webkit-mask: url("../img/comment.png");
+    mask: url("../img/comment.png");
+}
+
+.tag-icon {
+    -webkit-mask: url("../img/tag.png");
+    mask: url("../img/tag.png");
+}
+
+.link-icon {
+    -webkit-mask: url("../img/link.png");
+    mask: url("../img/link.png");
+}
+
+.icon-index {
+    background-color: #503E3C;
+}
+
+.icon-post {
+    background-color: #C5A7A1;
+}
+
+.icon-link {
+    background-color: #ADADAD;
+}
