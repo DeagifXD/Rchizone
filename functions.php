@@ -156,6 +156,7 @@ function limitCommentLength($comment)
 function themeInit($archive)
 {
     Typecho_Plugin::factory('Widget_Feedback')->comment = 'limitCommentLength';
+<<<<<<< HEAD
 }
 
 
@@ -174,4 +175,6 @@ function getLikeCount($cid)
         return $count['str_value'];
     }
     return 0;
+=======
+>>>>>>> cf834c3d27106dc21d5868f15bf85de1eff29501
 }

@@ -66,6 +66,7 @@
 .post_container .tags a:hover {
     background: #6d5452;
     color: #fff;
+<<<<<<< HEAD
 }
 
 .like-box{
@@ -85,4 +86,6 @@
 
 #like-btn:hover{
     opacity:.8;
+=======
+>>>>>>> cf834c3d27106dc21d5868f15bf85de1eff29501
 }
