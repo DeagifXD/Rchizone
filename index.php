@@ -4,11 +4,7 @@
  * 
  * @package Rchizone
  * @author Deagif
-<<<<<<< HEAD
  * @version 1.06
-=======
- * @version 1.0
->>>>>>> cf834c3d27106dc21d5868f15bf85de1eff29501
  */
 
 $this->need('header.php'); ?>
