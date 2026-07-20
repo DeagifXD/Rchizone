@@ -1,0 +1,33 @@
+.footer_container {
+    margin: 30px auto;
+    max-width: 960px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+
+.footer_container .text {
+    text-align:center;
+    font-size: 16px;
+    color: #6d5452;
+}
+
+.footer_container .text.title {
+    font-weight:bold;
+}
+
+.footer_container .text a {
+    color: inherit;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.footer_container .text a:hover {
+    color: #b39694;
+}

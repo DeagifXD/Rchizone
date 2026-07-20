@@ -1,0 +1,85 @@
+.post_hero {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.post_hero:hover {
+    opacity: 0.95;
+}
+
+.post_hero .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.6) 30%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.6) 70%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+}
+.post_hero .mask {
+    pointer-events: none;
+}
+
+.post_hero .content {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    width: 960px;
+}
+
+.post_hero .content h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.post_hero .content .divider {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.5) 0%,
+        rgba(0,0,0,0.25) 25%,
+        rgba(0,0,0,0) 80%
+    );
+}
+
+.post_hero .content .meta {
+    margin-left: 50px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #C5A7A1;
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.post_hero .content .meta .item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.post_hero .content .meta .item a {
+    text-decoration: none;
+    color: #C5A7A1;
+}

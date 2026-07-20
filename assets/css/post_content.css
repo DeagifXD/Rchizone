@@ -1,0 +1,88 @@
+.post_container {
+    width: 960px;
+    margin: -50px auto 0;
+    position: relative;
+    z-index: 3;
+}
+
+.post_container .card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.post_container .content {
+    line-height: 1.8;
+    font-size: 15px;
+    color: #444;
+}
+
+.post_container .content p {
+    margin-bottom: 16px;
+}
+
+.post_container .content a {
+    color: #836D6C;
+}
+
+.post_container .content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.post_container .content hr {
+    opacity: 0.2;
+}
+
+.post_container .content h2 {
+    color: #5A4A47;
+}
+.post_container .tags {
+    margin-top: 50px;
+}
+
+.post_container .tags a {
+    display: inline-block;
+    padding: 5px 12px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+
+    border-radius: 20px;
+    background: rgba(109, 71, 68, 0.2);
+    color: #6d5452;
+    font-size: 12px;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.post_container .tags a:hover {
+    background: #6d5452;
+    color: #fff;
+}
+
+.like-box{
+    text-align:center;
+    margin-top:30px;
+}
+
+#like-btn{
+    border:none;
+    background:#6D5452;
+    color:white;
+    padding:10px 25px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#like-btn:hover{
+    opacity:.8;
+}

@@ -1,0 +1,262 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.index_hero {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    overflow: visible;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.index_hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.5) 25%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    z-index: 1;
+}
+
+.index_hero * {
+    position: relative;
+    z-index: 2;
+}
+
+.index_hero .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+
+    margin-bottom: 15px;
+    flex-shrink: 0;
+}
+
+.index_hero .title {
+    font-size: 36px;
+    font-weight: normal;
+    margin: 10px 0;
+    margin-bottom: 5px;
+
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.index_hero .divider {
+    width: 500px;
+    height: 1px;
+    margin: 20px auto;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0.4) 30%,
+        rgba(0,0,0,0.5) 50%,
+        rgba(0,0,0,0.4) 70%,
+        rgba(0,0,0,0) 100%
+    );
+}
+
+.index_hero .desc {
+    font-size: 20px;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+/* 导航栏 */
+.index_hero .nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+
+    background: rgba(123, 98, 92, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index_hero .nav::before,
+.index_hero .nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(78, 60, 58, 0.9);
+}
+
+.index_hero .nav::before {
+    top: 0;
+}
+
+.index_hero .nav::after {
+    bottom: 0;
+}
+
+.index_hero .nav-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-inner a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #aa8282;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0 20px;
+    text-shadow: 0 0px 10px rgba(59, 45, 43, 0.5);
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.nav-inner a:hover {
+    color: #dfc5c3;
+    text-shadow: 0 0px 15px rgba(255, 255, 255, 0.5);
+    background-color: rgba(48, 33, 30, 0.4);
+}
+
+.nav-inner .dot {
+    color: #aa8282;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.nav-inner .nav-dropdown {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    backdrop-filter: blur(4px);
+
+    background: rgba(78, 57, 53, 0.8);
+    border-radius: 12px;
+    padding: 10px 0;
+
+    min-width: 180px;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #aa8282;
+    text-align: center;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+    color: #dfc5c3;
+    background-color: rgba(48, 33, 30, 0.4);
+}
+
+.nav-dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 768px) {
+    .index_hero {
+        height: auto;
+        min-height: 500px;
+        padding-bottom: 120px;
+    }
+
+    .index_hero .title {
+        font-size: 24px;
+    }
+
+    .index_hero .desc {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .index_hero .divider {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .index_hero .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav-inner a {
+        font-size: 18px;
+        padding: 0 12px;
+    }
+
+    .nav-inner .dot {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .index_hero {
+        min-height: 400px;
+        padding-bottom: 100px;
+    }
+
+    .index_hero .title {
+        font-size: 20px;
+    }
+
+    .index_hero .desc {
+
+        font-size: 14px;
+    }
+
+    .nav-inner a {
+        font-size: 14px;
+        padding: 0 8px;
+    }
+
+    .nav-inner {
+        gap: 5px;
+    }
+}
